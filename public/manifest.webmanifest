@@ -1,9 +1,22 @@
 {
   "name": "Tinnitus Binaural Beats",
-  "short_name": "Tinnitus Sound",
+  "short_name": "Binaural Beats",
+  "description": "Low-volume binaural beat sound sessions for relaxation.",
   "start_url": "./",
+  "scope": "./",
   "display": "standalone",
   "background_color": "#111827",
   "theme_color": "#111827",
-  "icons": []
+  "icons": [
+    {
+      "src": "./icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
 }
