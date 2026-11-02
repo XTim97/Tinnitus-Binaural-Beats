@@ -1,0 +1,74 @@
+node_modules
+dist
+.DS_Store
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#111827" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Tinnitus Sound" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <title>Tinnitus Binaural Beats</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+
+{
+  "name": "tinnitus-binaural-beats",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^5.0.0",
+    "vite": "^7.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {}
+}
+
+# Tinnitus Binaural Beats
+
+A cross-platform Progressive Web App for iPhone, iPad, Android, tablets, Windows, and Mac browsers.
+
+## GitHub Pages publishing
+
+1. Create a new GitHub repository named `tinnitus-binaural-beats`.
+2. Upload all files and folders from this project to the repository.
+3. Commit them to the `main` branch.
+4. In GitHub, open **Settings > Pages**.
+5. Under **Build and deployment**, set **Source** to **GitHub Actions**.
+6. Open the **Actions** tab and wait for the `Deploy to GitHub Pages` workflow to finish successfully.
+7. GitHub will show the published Pages address.
+
+## Install on a device
+
+### iPhone / iPad
+Open the published site in Safari, tap **Share**, then **Add to Home Screen**.
+
+### Android
+Open the published site in Chrome and choose **Install app** or **Add to Home screen**.
+
+## Safety note
+
+This app is intended for low-volume relaxation and sound experimentation only. Binaural beats are not an established treatment for tinnitus. Keep headphone volume comfortable and stop if symptoms worsen.
+
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+export default defineConfig({
+  plugins: [react()],
+  base: './'
+})
